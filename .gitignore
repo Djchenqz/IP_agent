@@ -1,1 +1,7 @@
-*.pyc
+import requests
+import time
+
+url = "https://www.lagou.com/jobs/list_python?labelWords=&fromSearch=true&suginput="
+
+response = requests.get(url=url)
+print(response.content.decode())
